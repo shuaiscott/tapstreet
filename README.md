@@ -2,7 +2,7 @@
 Open Source, GitHub Pages-hosted Business Card for Connecting to People 🤝
 
 ## Usage
-1. [Fork this repository](https://github.com/shuaiscott/tapdeets/fork)
+1. [Create repo from this template](https://github.com/shuaiscott/tapdeets/generate)
 2. Modify your 'Deets' in `deets.yaml` and commit (save) your changes
 3. Write your GitHub Pages URL to an NFC Chip
 
