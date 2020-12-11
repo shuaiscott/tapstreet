@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/shuaiscott/tapdeets/main/logo.svg" width="40%">
+
 # TapDeets
 Open Source, GitHub Pages-hosted Business Card for Connecting to People 🤝
 
