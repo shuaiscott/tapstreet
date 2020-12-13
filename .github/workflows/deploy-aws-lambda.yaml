@@ -10,7 +10,7 @@ jobs:
       working-directory: ./deploy
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [15.x]
     steps:
       - uses: actions/checkout@main
       - name: Use Node.js ${{ matrix.node-version }}
