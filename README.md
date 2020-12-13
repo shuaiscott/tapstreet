@@ -1,3 +1,6 @@
+![deploy-aws-lambda](https://github.com/shuaiscott/tapdeets/workflows/deploy-aws-lambda/badge.svg?branch=main)
+
+
 <img src="https://raw.githubusercontent.com/shuaiscott/tapdeets/main/logo.svg" width="40%">
 
 # TapDeets
