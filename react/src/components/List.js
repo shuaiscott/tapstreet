@@ -1,12 +1,5 @@
 import React from 'react';
-
-const urlsMap = {
-  linkedin: 'https://linkedin.com/in/',
-  facebook: 'https://facebook.com/',
-  instagram: 'https://instagram.com/',
-  pinterest: 'https://pinterest.com/',
-  venmo: 'https://venmo.com/',
-};
+import { profileUrlsMap } from '../Constants'
 
 const List = (props) => {
   const { deet } = props;
@@ -18,12 +11,12 @@ const List = (props) => {
             <h4 className='id'>{deet.phone}</h4>
             <h4 className='id'>{deet.email}</h4>
             <div className="row">
-              <div className="column"><a href={urlsMap['linkedin'] + deet.linkedin}><img src="app-icons/linkedin.svg" alt="linkedin" width="30%" /></a></div>
-              <div className="column"><a href={urlsMap['instagram'] + deet.instagram}><img src="app-icons/instagram.svg" alt="instagram" width="30%" /></a></div>
+              <div className="column"><a href={profileUrlsMap['linkedin'] + deet.linkedin}><img src="app-icons/linkedin.svg" alt="linkedin" width="60%" /></a></div>
+              <div className="column"><a href={profileUrlsMap['instagram'] + deet.instagram}><img src="app-icons/instagram.svg" alt="instagram" width="60%" /></a></div>
             </div>
             <div className="row">
-              <div className="column"><a href={urlsMap['facebook'] + deet.facebook}><img src="app-icons/facebook.svg" alt="facebook" width="30%" /></a></div>
-              <div className="column"><a href={urlsMap['pinterest'] + deet.pinterest}><img src="app-icons/pinterest.svg" alt="pinterest" width="30%" /></a></div>
+              <div className="column"><a href={profileUrlsMap['facebook'] + deet.facebook}><img src="app-icons/facebook.svg" alt="facebook" width="60%" /></a></div>
+              <div className="column"><a href={profileUrlsMap['pinterest'] + deet.pinterest}><img src="app-icons/pinterest.svg" alt="pinterest" width="60%" /></a></div>
             </div>
           </div>
   );

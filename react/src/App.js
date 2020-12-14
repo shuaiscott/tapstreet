@@ -3,6 +3,7 @@ import './App.css';
 import List from './components/List';
 import withListLoading from './components/withListLoading';
 import useQueryParam from './useQueryParam';
+import { config } from './Constants'
 function App() {
   const [deet_id] = useQueryParam('id', '');
   const ListLoading = withListLoading(List);
@@ -13,7 +14,7 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = "https://api.deets.tapme.org/deets/"+ deet_id;
+    const apiUrl = config.url.API_URL + deet_id;
     fetch(apiUrl)
       .then((res) => res.json())
       .then((deet) => {
