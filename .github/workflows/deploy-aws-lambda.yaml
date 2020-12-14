@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./deploy
+      working-directory: ./serverless
     strategy:
       matrix:
         node-version: [15.x]
