@@ -40,6 +40,7 @@ functions:
       - http:
           path: deets/{id}
           method: get
+          cors: true 
           request: 
             parameters: 
                paths: 
@@ -50,6 +51,7 @@ functions:
       - http:
           path: deets
           method: post
+          cors: true 
   # update_deets:
   #   handler: handler.update_deets
   #   events:
