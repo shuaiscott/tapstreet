@@ -51,7 +51,7 @@ def create_deets(event, context):
     deet_id = str(uuid.uuid4())
 
     deet_link = deet_id # TODO Replace this with full URL
-    item = event['body']
+    item = json.loads(event['body'])
     # Putting a try/catch to log to user when some error occurs
     try:
         # print(f"Adding deets: {event}")
