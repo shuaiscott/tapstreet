@@ -14,9 +14,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "cors-proxy": "lcp --proxyUrl https://api.deets.tapme.org/",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "lcp --proxyUrl https://api.deets.tapme.org/ & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
