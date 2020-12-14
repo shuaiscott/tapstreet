@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = "http://localhost:8010/proxy/deets/"+ deet_id;
+    const apiUrl = "https://api.deets.tapme.org/deets/"+ deet_id;
     fetch(apiUrl)
       .then((res) => res.json())
       .then((deet) => {
