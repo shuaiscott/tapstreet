@@ -40,7 +40,9 @@ functions:
       - http:
           path: deets/{id}
           method: get
-          cors: true 
+          cors: 
+            - enabled: true 
+            - origin: 'https://deets.tapme.org'
           request: 
             parameters: 
                paths: 
@@ -51,7 +53,9 @@ functions:
       - http:
           path: deets
           method: post
-          cors: true 
+          cors: 
+            - enabled: true 
+            - origin: 'https://deets.tapme.org' 
   # update_deets:
   #   handler: handler.update_deets
   #   events:
