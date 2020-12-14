@@ -1,4 +1,8 @@
-![deploy-aws-lambda](https://github.com/shuaiscott/tapdeets/workflows/deploy-aws-lambda/badge.svg?branch=main)
+![Build/Deploy Action](https://github.com/shuaiscott/tapdeets/workflows/Build%20and%20Deploy%20app/badge.svg)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=shuaiscott_tapdeets&metric=coverage)](https://sonarcloud.io/dashboard?id=shuaiscott_tapdeets)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=shuaiscott_tapdeets&metric=security_rating)](https://sonarcloud.io/dashboard?id=shuaiscott_tapdeets)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=shuaiscott_tapdeets&metric=alert_status)](https://sonarcloud.io/dashboard?id=shuaiscott_tapdeets)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=shuaiscott_tapdeets&metric=code_smells)](https://sonarcloud.io/dashboard?id=shuaiscott_tapdeets)
 
 
 <img src="https://raw.githubusercontent.com/shuaiscott/tapdeets/main/logo.svg" width="40%">
