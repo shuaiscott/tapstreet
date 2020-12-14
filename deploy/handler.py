@@ -51,11 +51,12 @@ def create_deets(event, context):
     deet_id = str(uuid.uuid4())
 
     deet_link = deet_id # TODO Replace this with full URL
+    item = event['body']
     # Putting a try/catch to log to user when some error occurs
     try:
         # print(f"Adding deets: {event}")
-        event['id'] = deet_id
-        deets_table.put_item(Item=event)
+        item['id'] = deet_id
+        deets_table.put_item(Item=item)
         
         return {
         	'headers': {
