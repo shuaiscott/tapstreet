@@ -25,11 +25,11 @@ def get_deets(event, context):
         	}	
 
         return {
-        	headers: {
+            'statusCode': 200,
+            'headers': {
 		      'Access-Control-Allow-Origin': 'https://deets.tapme.org',
 		      'Access-Control-Allow-Credentials': true,
 		    },
-            'statusCode': 200,
             'body': json.dumps(results['Items'][0]) # only return the first match for uuid
         }
     except Exception as e:
@@ -58,7 +58,7 @@ def create_deets(event, context):
         deets_table.put_item(Item=event)
         
         return {
-        	headers: {
+        	'headers': {
 		      'Access-Control-Allow-Origin': 'https://deets.tapme.org',
 		      'Access-Control-Allow-Credentials': true,
 		    },
