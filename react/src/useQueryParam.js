@@ -20,8 +20,6 @@ const useQueryParam = (
   const updateUrl = (newVal: string) => {
     setQuery(newVal);
 
-    const query = getQuery();
-
     if (newVal.trim() !== '') {
       query.set(key, newVal);
     } else {

@@ -6,7 +6,6 @@ import uuid
 def get_deets(event, context):
 	# Instanciating connection objects with DynamoDB using boto3 dependency
     dynamodb = boto3.resource('dynamodb')
-    client = boto3.client('dynamodb')
 
     # get variable of deets table
     deets_table = dynamodb.Table('deets')
@@ -42,7 +41,6 @@ def get_deets(event, context):
 def create_deets(event, context):
 	# Instanciating connection objects with DynamoDB using boto3 dependency
     dynamodb = boto3.resource('dynamodb')
-    client = boto3.client('dynamodb')
 
     # get variable of deets table
     deets_table = dynamodb.Table('deets')
