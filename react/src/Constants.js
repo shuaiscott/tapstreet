@@ -1,12 +1,12 @@
 // Prod/Dev env variables
 const prod = {
  url: {
-  API_URL: 'https://api.deets.tapme.org/deets/'
+  API_URL: 'https://api.deets.tapme.org/production/deets/'
  }
 };
 const dev = {
  url: {
-  API_URL: 'http://localhost:8010/proxy/deets/'
+  API_URL: 'http://localhost:8010/proxy/production/deets/'
  }
 };
 export const config = process.env.NODE_ENV === 'development' ? dev : prod;

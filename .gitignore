@@ -1,4 +1,4 @@
-serverless/node_modules/
+aws/node_modules/
 react/node_modules/
 
 # dependencies

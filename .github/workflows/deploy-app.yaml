@@ -9,7 +9,7 @@ jobs:
   aws-lambda-deploy:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./serverless
+      working-directory: ./aws
     strategy:
       matrix:
         node-version: [15.x]
