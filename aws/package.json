@@ -1,15 +1,13 @@
 {
-	"name":"tapdeets",
-	"description":"",
-	"version":"0.1.0",
-	"dependencies": {},
-	"devDependencies": 
-	{
-		"serverless-python-requirements":"^5.1.0",
-		"serverless": "^1.67.0"
+	"name": "tapdeets",
+	"description": "",
+	"version": "0.1.0",
+	"devDependencies": {
+		"serverless": "^3.21.0",
+		"serverless-python-requirements": "^5.4.0"
 	},
 	"scripts": {
-    "deploy": "serverless deploy",
-    "deploy-prod": "serverless deploy --stage production"
-  }
+		"deploy": "serverless deploy",
+		"deploy-prod": "serverless deploy --stage production"
+	}
 }
